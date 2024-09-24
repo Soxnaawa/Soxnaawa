@@ -1,0 +1,39 @@
+#score-display {
+    font-size: 2rem;
+    color: #007bff;
+    font-weight: bold;
+    transition: transform 0.5s ease-in-out, color 0.3s ease;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#score-display.flash {
+    color: #ff0000; /* Change la couleur du texte pendant l'animation */
+    transform: scale(1.2); /* Agrandit le texte */
+}
+
+#score-display.success {
+    color: #28a745; /* Couleur pour le score réussi */
+}
+
+#score-display.error {
+    color: #dc3545; /* Couleur pour les erreurs */
+}
+#score-progress {
+    height: 30px;
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 20px;
+    position: relative;
+}
+
+#score-bar {
+    height: 100%;
+    background-color: #007bff;
+    width: 0%;
+    transition: width 0.5s ease-in-out;
+}

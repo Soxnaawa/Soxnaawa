@@ -1,0 +1,26 @@
+<?php 
+$motif=$_REQUEST["motif"];
+echo  "fichier original:".$_FILES["fichier"]["name"]."<br>";
+echo  "fichier temporaire:".$_FILES["fichier"]["tmp_name"]."<br>";
+echo  "taille du fichier:".$_FILES["fichier"]["size"]."<br>";
+
+/*if(!isset($_FILES["fichier"]))
+die("erreur d'envoi du fichier!!!");*/
+
+//copy($_FILES["fichier"]["tmp_name"],_DIR_."test.txt");
+if (!$f=fopen(/*_DIR_*/"./test.txt","r")) {
+    die("probleme d'ouverture du fichier!!!");
+}
+while (!feof($f)){ ?>
+
+<?php
+
+    $ligne=fgets($f,255);
+    $newligne= str_replace($motif,"<span style='color: #ff0000;'>$motif</span>",$ligne);
+    echo $ligne."<br>";
+}
+fclose($f);
+
+
+
+?>

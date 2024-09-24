@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container, .premier {
+    width: 40%;
+    margin: 10px auto; /* Réduit la marge pour économiser de l'espace */
+    padding: 10px; /* Réduit le rembourrage pour économiser de l'espace */
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Réduit l'ombre pour un look plus léger */
+    border-radius: 10px;
+}
+
+legend {
+    margin-bottom: 10px; /* Réduit l'espace sous le titre */
+    font-weight: bold;
+    font-size: 1.2em; /* Réduit la taille de la police du titre */
+}
+
+.link-list {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Enlève les marges supplémentaires */
+}
+
+.link-list li {
+    margin-bottom: 5px; /* Réduit la marge entre les éléments */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.link-list li a {
+    display: block;
+    padding: 8px; /* Réduit le rembourrage autour du texte */
+    color: #008a50;
+    text-decoration: none;
+    font-size: 0.9em; /* Réduit la taille de la police des liens */
+    transition: color 0.3s ease;
+}
+
+.link-list li a:hover {
+    color: #005c32;
+}

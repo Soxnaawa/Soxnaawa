@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesnotes-login</title>
+    <link rel="stylesheet" href="css/styles.css?v1">
+</head>
+<body>
+    <div class="container">
+        <h1>Mes Notes-<span>App</span></h1>
+        <form class="mes-notes"  method="post" action="views/login.php">
+          <label for="username">Nom d'utilisateur:</label>
+          <input type="text" id="username" name="username" required>
+          <div class="password-container">
+          <label for="password">Mot de passe:</label>
+          <input type="password" id="password" name="password" required>
+          <span class="toggle-password">Afficher</span>
+        </div>
+        <button type="submit">Se connecter</button>
+        </form>
+
+        <a href="views/creercompte.php">Pas de compte ? Inscrivez vous</a>
+
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var passwordInput = document.getElementById("password");
+            var toggleBtn = document.querySelector(".toggle-password");
+            passwordInput.addEventListener("input", function() {
+                if (passwordInput.value.length > 0) {
+                    toggleBtn.style.display = "block";
+                } else {
+                    toggleBtn.style.display = "none";
+                }
+            });
+            toggleBtn.addEventListener("click", function() {
+                if (passwordInput.type === "password") {
+                    passwordInput.type = "text";
+                    toggleBtn.textContent = "Masquer";
+                } else {
+                    passwordInput.type = "password";
+                    toggleBtn.textContent = "Afficher";
+                }
+            });
+        })
+    </script>
+</body>
+</html>
