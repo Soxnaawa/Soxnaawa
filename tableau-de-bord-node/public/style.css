@@ -1,0 +1,75 @@
+/* Réinitialisation des styles de base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style de l'en-tête */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Espacement principal */
+main {
+    padding: 20px;
+}
+
+/* Style des sections */
+section {
+    margin-bottom: 30px;
+}
+
+/* Style des titres de section */
+section h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Style de la table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px; /* Espacement entre les tables */
+    background-color: white; /* Fond blanc pour les tables */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+/* Style des lignes et cellules */
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px 15px; /* Ajustement du padding pour un espacement plus uniforme */
+    text-align: left;
+}
+
+/* Style de l'en-tête de la table */
+th {
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Style des lignes paires */
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Hover des lignes */
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Style des liens dans les cellules */
+td a {
+    color: #007bff; /* Couleur des liens */
+    text-decoration: none; /* Supprimer le soulignement par défaut */
+}
+
+/* Hover des liens */
+td a:hover {
+    text-decoration: underline; /* Souligner au survol */
+}
